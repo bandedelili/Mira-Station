@@ -1,3 +1,4 @@
+This is slightly modified to fit mira stations gameplay, Please note that the antags in mira station are somewhat different than the usual ss14 antags if you are new to ss14.
 If you’re new to roleplaying or are unfamiliar with IC and OOC please read on. If not, skip to the next section.
 
 SS14 is at its core a roleplaying game - You play a role on the station through your character which you can customise from the lobby prior to joining the game. You can select the roles or jobs your character plays via the customisation menu too. When you’re in a round playing your character, you are IC or In Character. When you’re in character you forget any knowledge of previous rounds or essentially of the outside world and you play as if you’re a member of the station's crew.
@@ -11,11 +12,11 @@ To summarise, when you’re in game, don’t discuss the round anywhere else unt
 
 Traitors, antagonists, RDM and “self antag”
 
-If in your character customisation settings you selected the chance to become an antagonist (antag) or other traitor role, it is not guaranteed that you will be one. When a traitor gamemode round starts there is a random roll of all the players who selected the chance to become a traitor and only some get selected. They will be notified they are a traitor in chat and will have a set of objectives they can view by pressing C.
+If in your character customisation settings you selected the chance to become a imposter or another antag (antagonist) role, it is not guaranteed that you will be one. When a normal gamemode round starts there is a random roll of all the players who selected the chance to become a traitor and only some get selected. They will be notified they are a imposter in chat and will have a set of objectives they can view by pressing C.
 
-Being an antagonist is not an excuse to go on a murder spree. Your job is to complete your objectives which on occasion will include escaping alive or dying a glorious death. How you complete your objectives is up to you so murder is valid but try to have fun (ideally not at everyones expense but that’s up to you).
+Being an antagonist that is not a imposter is not an excuse to go on a murder spree. Your job is to complete your objectives which on occasion will include escaping alive or dying a glorious death. How you complete your objectives is up to you so murder is valid but try to have fun (ideally not at everyones expense but that’s up to you).
 
-If you suspect an antagonist such as a traitor or cultist etc report them to security as fast as possible and if necessary do what you can to protect yourself. Remember traitors are people too, so ideally they should be arrested and prosecuted under space law and not just murdered (but do what you need to do to survive).
+If you suspect an antagonist such as a imposter or etc call a emergency meeting as fast as possible and if necessary do what you can to protect yourself. Remember imposters are alienic murderous creatures who will probably shoot you to death if wanted.
 
 RDM or random deathmatch is the act of killing someone for no reason or attempting to. If you are being attacked it is likely the other person could be an antag but if you’re unsure, ask the admins for help (ahelp) to check this when convenient.
 
