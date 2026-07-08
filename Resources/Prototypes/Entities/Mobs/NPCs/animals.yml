@@ -3098,7 +3098,7 @@
   parent: [SimpleMobBase, StripableInventoryBase]
   id: MobCorgiBase
   name: corgi
-  description: Finally, a space corgi!
+  description: Whos a good boooy, Go fetch, Wait no nono. BISCUIT DONT MAUL MY CREWMEMBERS?? NONONONO BISCUIT GET AWAY NO NOOOO.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -3608,7 +3608,7 @@
   name: hamster
   parent: [ SimpleMobBase, MobCombat, StripableInventoryBase, BaseSlicingRefinable, MobNightVision]
   id: MobHamster
-  description: A cute, fluffy, robust hamster.
+  description: Mira HQ sure does make weird hamsters...
   components:
   - type: GhostRole
     makeSentient: true
