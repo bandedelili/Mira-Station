@@ -30,7 +30,7 @@ public sealed partial class HumanoidProfileComponent : Component
     public Sex Sex;
 
     [DataField, AutoNetworkedField]
-    public int Age = 18;
+    public int Age = 5;
 
     [DataField, AutoNetworkedField]
     public ProtoId<SpeciesPrototype> Species = HumanoidCharacterProfile.DefaultSpecies;
