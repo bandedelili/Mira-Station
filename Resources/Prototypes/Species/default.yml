@@ -1,0 +1,19 @@
+- type: species
+  id: DefaultCrew
+  name: species-name-default
+  roundStart: true
+  prototype: MobCrew
+  dollPrototype: AppearanceCrew
+  skinColoration: CrewSkin
+  defaultSkinTone: "#6c741d"
+  maleFirstNames: NamesCrew
+  femaleFirstNames: NamesCrew
+  naming: First
+  sexes:
+  - Unsexed
+  defaultSoundsBySex:
+  - UnisexVox
+  - UnisexVox
+  - UnisexVox
+  voices:
+  - UnisexVox
