@@ -95,10 +95,10 @@ public sealed partial class SpeciesPrototype : IPrototype
     public HashSet<ProtoId<EmoteSoundsPrototype>> Voices = ["MaleHuman", "FemaleHuman"];
 
     /// <summary>
-    ///     Characters younger than this are too young to be hired by Nanotrasen.
+    ///     Characters younger than this are too young to be hired by Mira.
     /// </summary>
     [DataField]
-    public int MinAge = 18;
+    public int MinAge = 5;
 
     /// <summary>
     ///     Characters younger than this appear young.
