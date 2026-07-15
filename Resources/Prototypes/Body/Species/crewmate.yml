@@ -8,14 +8,6 @@
     organs:
       Torso: OrganVulpkaninTorso
       Head: OrganVulpkaninHead
-      ArmLeft: OrganVulpkaninArmLeft
-      ArmRight: OrganVulpkaninArmRight
-      HandRight: OrganVulpkaninHandRight
-      HandLeft: OrganVulpkaninHandLeft
-      LegLeft: OrganVulpkaninLegLeft
-      LegRight: OrganVulpkaninLegRight
-      FootLeft: OrganVulpkaninFootLeft
-      FootRight: OrganVulpkaninFootRight
       Brain: OrganVulpkaninBrain
       Eyes: OrganVulpkaninEyes
       Tongue: OrganVulpkaninTongue
@@ -36,7 +28,7 @@
       - state: crewmatevisor
         map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
   - type: Inventory
-    speciesId: vulpkanin
+    speciesId: defaultcrew
     displacements:
       jumpsuit:
         sizeMaps:
@@ -86,7 +78,6 @@
 
 - type: entity
   parent:
-  - AppearanceVulpkanin
   - BaseSpeciesMobOrganic
   id: MobBasicCrew
   name: Nullmate
@@ -154,12 +145,12 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganVulpkanin
+  id: OrganCrewmate
   abstract: true
-  suffix: vulpkanin
+  suffix: Crewmate
 
 - type: entity
-  id: OrganVulpkaninMetabolizer
+  id: OrganCrewmateMetabolizer
   abstract: true
   components:
   - type: Metabolizer
@@ -184,17 +175,6 @@
     markingData:
       group: Vulpkanin
 
-- type: entity
-  parent: [ OrganVulpkanin, OrganVulpkaninVisual ]
-  id: OrganVulpkaninExternal
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Vulpkanin/parts.rsi
-
-- type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganVulpkaninExternal ]
-  id: OrganVulpkaninTorso
 
 - type: entity
   parent: [ OrganBaseHead, OrganVulpkaninExternal ]
