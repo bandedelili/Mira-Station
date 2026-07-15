@@ -1,23 +1,9 @@
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceVulpkanin
+  id: AppearanceCrewmate
   categories: [ HideSpawnMenu ]
   name: crewmate appearance
   components:
-  - type: InitialBody
-    organs:
-      Torso: OrganVulpkaninTorso
-      Head: OrganVulpkaninHead
-      Brain: OrganVulpkaninBrain
-      Eyes: OrganVulpkaninEyes
-      Tongue: OrganVulpkaninTongue
-      Appendix: OrganVulpkaninAppendix
-      Ears: OrganVulpkaninEars
-      Lungs: OrganVulpkaninLungs
-      Heart: OrganVulpkaninHeart
-      Stomach: OrganVulpkaninStomach
-      Liver: OrganVulpkaninLiver
-      Kidneys: OrganVulpkaninKidneys
   - type: HumanoidProfile
     species: DefaultCrew
   - type: Sprite
