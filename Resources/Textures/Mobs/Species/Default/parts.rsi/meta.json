@@ -8,7 +8,7 @@
     },
     "states": [
         {
-            "name": "crewmatebody"
+            "name": "torso"
             "directions": 4
         },
         {
