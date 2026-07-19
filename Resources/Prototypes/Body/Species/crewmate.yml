@@ -6,13 +6,6 @@
   components:
   - type: HumanoidProfile
     species: DefaultCrew
-  - type: Sprite
-    sprite: /Mobs/Species/Default/crewmate.rsi/
-    layers:
-      - state: crewmatebody
-        map: [ "enum.DamageStateVisualLayers.Base" ]
-      - state: crewmatevisor
-        map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
   - type: Inventory
     speciesId: defaultcrew
     displacements:
@@ -104,8 +97,6 @@
     heatDamage:
       types:
         Heat: 2.5 # Per second, scales with temperature & other constants
-  - type: Wagging
-    action: ActionToggleWaggingVulpkanin
   - type: TemperatureProtection
     heatingCoefficient: 1.2
     coolingCoefficient: 0.3
@@ -124,133 +115,13 @@
       reagents:
       - ReagentId: SulfurBlood
         Quantity: 600
+  - type: Sprite
+    sprite: Textures/Mobs/Species/Default/parts.rsi/
+- type: entity
+  parent: [ OrganBaseTorso ]
+  id: OrganCrewmateTorso
   - type: CreamPied
     sprite:
       sprite: Effects/creampie.rsi
       state: creampie_vulpkanin
 
-- type: entity
-  parent: OrganBaseOrganic
-  id: OrganCrewmate
-  abstract: true
-  suffix: Crewmate
-
-- type: entity
-  id: OrganCrewmateMetabolizer
-  abstract: true
-  components:
-  - type: Metabolizer
-    metabolizerTypes: [ Animal ]
-
-- type: entity
-  parent: OrganVulpkanin
-  id: OrganVulpkaninInternal
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Vulpkanin/organs.rsi
-
-- type: entity
-  id: OrganVulpkaninVisual
-  abstract: true
-  components:
-  - type: VisualOrgan
-    data:
-      sprite: Mobs/Species/Vulpkanin/parts.rsi
-  - type: VisualOrganMarkings
-    markingData:
-      group: Vulpkanin
-
-
-- type: entity
-  parent: [ OrganBaseHead, OrganVulpkaninExternal ]
-  id: OrganVulpkaninHead
-  components:
-  - type: VisualOrganMarkings
-    hideableLayers:
-    - enum.HumanoidVisualLayers.Snout
-    - enum.HumanoidVisualLayers.HeadTop
-    - enum.HumanoidVisualLayers.HeadSide
-    - enum.HumanoidVisualLayers.Hair
-    - enum.HumanoidVisualLayers.FacialHair
-    dependentHidingLayers:
-      enum.HumanoidVisualLayers.Snout:
-      - enum.HumanoidVisualLayers.SnoutCover
-    markingsDisplacement:
-      Hair:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: hair
-
-- type: entity
-  parent: [ OrganBaseArmLeft, OrganVulpkaninExternal ]
-  id: OrganVulpkaninArmLeft
-
-- type: entity
-  parent: [ OrganBaseArmRight, OrganVulpkaninExternal ]
-  id: OrganVulpkaninArmRight
-
-- type: entity
-  parent: [ OrganBaseHandLeft, OrganVulpkaninExternal ]
-  id: OrganVulpkaninHandLeft
-
-- type: entity
-  parent: [ OrganBaseHandRight, OrganVulpkaninExternal ]
-  id: OrganVulpkaninHandRight
-
-- type: entity
-  parent: [ OrganBaseLegLeft, OrganVulpkaninExternal ]
-  id: OrganVulpkaninLegLeft
-
-- type: entity
-  parent: [ OrganBaseLegRight, OrganVulpkaninExternal ]
-  id: OrganVulpkaninLegRight
-
-- type: entity
-  parent: [ OrganBaseFootLeft, OrganVulpkaninExternal ]
-  id: OrganVulpkaninFootLeft
-
-- type: entity
-  parent: [ OrganBaseFootRight, OrganVulpkaninExternal ]
-  id: OrganVulpkaninFootRight
-
-- type: entity
-  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganVulpkaninInternal ]
-  id: OrganVulpkaninBrain
-
-- type: entity
-  parent: [ OrganVulpkaninVisual, OrganBaseEyes, OrganVulpkaninInternal ]
-  id: OrganVulpkaninEyes
-
-- type: entity
-  parent: [ OrganBaseTongue, OrganVulpkaninInternal ]
-  id: OrganVulpkaninTongue
-
-- type: entity
-  parent: [ OrganBaseAppendix, OrganVulpkaninInternal ]
-  id: OrganVulpkaninAppendix
-
-- type: entity
-  parent: [ OrganBaseEars, OrganVulpkaninInternal ]
-  id: OrganVulpkaninEars
-
-- type: entity
-  parent: [ OrganBaseLungs, OrganVulpkaninInternal, OrganVulpkaninMetabolizer ]
-  id: OrganVulpkaninLungs
-
-- type: entity
-  parent: [ OrganBaseHeart, OrganVulpkaninInternal, OrganVulpkaninMetabolizer ]
-  id: OrganVulpkaninHeart
-
-- type: entity
-  parent: [ OrganBaseStomach, OrganVulpkaninInternal, OrganVulpkaninMetabolizer ]
-  id: OrganVulpkaninStomach
-
-- type: entity
-  parent: [ OrganBaseLiver, OrganVulpkaninInternal, OrganVulpkaninMetabolizer ]
-  id: OrganVulpkaninLiver
-
-- type: entity
-  parent: [ OrganBaseKidneys, OrganVulpkaninInternal, OrganVulpkaninMetabolizer ]
-  id: OrganVulpkaninKidneys
